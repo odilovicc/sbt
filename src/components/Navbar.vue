@@ -1,37 +1,37 @@
 <template>
     <div class="flex justify-center">
         <div class="w-full">
-        <MegaMenu :model="items" />
-      </div>
+            <MegaMenu :model="items" />
+        </div>
     </div>
-  </template>
+</template>
 <script setup>
 import { ref } from "vue";
 const items = ref([
     {
         label: 'Вход & Регистрация',
-        icon: 'pi pi-fw pi-align-justify',
+        icon: 'pi pi-sign-in',
         items: [
             [
                 {
                     items: [
-                        { label: 'Вход' }, { label: 'Регистрация член биржи'}, { label: 'Регистрация член биржи'}]
+                        { label: 'Вход' }, { label: 'Регистрация член биржи' }, { label: 'Регистрация член биржи' }]
                 }
             ]
-        ],styleClass: 'custom-menu-item'
+        ], styleClass: 'custom-menu-item'
     },
     {
         label: 'Администратор',
-        icon: 'pi pi-align-justify',
+        icon: 'pi pi-verified',
         items: [
             [
                 {
                     items: [
-                    { label: 'Пользователи' },
-                    { label: 'Роли' },
-                    { label: 'Права доступа' },
-                    { label: 'Логи' },
-                    { label: 'Тарифы' }
+                        { label: 'Пользователи' },
+                        { label: 'Роли' },
+                        { label: 'Права доступа' },
+                        { label: 'Логи' },
+                        { label: 'Тарифы' }
                     ]
                 }
             ]
@@ -39,7 +39,7 @@ const items = ref([
     },
     {
         label: 'Модератор',
-        icon: 'pi pi-align-justify',
+        icon: 'pi pi-user-plus',
         items: [
             [
                 {
@@ -58,7 +58,7 @@ const items = ref([
     },
     {
         label: 'Брокер',
-        icon: 'pi pi-align-justify',
+        icon: 'pi pi-flag',
         items: [
             [
                 {
@@ -76,7 +76,7 @@ const items = ref([
     },
     {
         label: 'Трейдер',
-        icon: 'pi pi-align-justify',
+        icon: 'pi pi-send',
         items: [
             [
                 {
@@ -89,7 +89,7 @@ const items = ref([
     },
     {
         label: 'Клиент',
-        icon: 'pi pi-align-justify',
+        icon: 'pi pi-user',
         items: [
             [
                 {
@@ -109,13 +109,15 @@ const items = ref([
 ]);
 </script>
 <style scoped>
-    @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-    *{
-        font-family: "Poppins", sans-serif;
-    }
-    .p-megamenu{
-        display: flex;
-        justify-content: center;
-        z-index: 50;
-    }
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.p-megamenu {
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+}
 </style>

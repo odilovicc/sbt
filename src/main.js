@@ -1,10 +1,10 @@
 import Particles from "vue3-particles";
 
 createApp(App).use(Particles);
-import "primevue/resources/themes/bootstrap4-dark-blue/theme.css";
+import "primevue/resources/themes/bootstrap4-light-blue/theme.css";
 import "primevue/resources/primevue.min.css"; /* Deprecated */
 import "primeicons/primeicons.css";
-
+import { useToast } from "primevue/usetoast";
 import { createApp } from "vue";
 import App from "./App.vue";
 import PrimeVue from "primevue/config";

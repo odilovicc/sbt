@@ -7,8 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "autoprefixer": "^10",
     "core-js": "^3.8.3",
+    "flowbite": "^1.8.1",
     "postcss": "^8",
     "primeicons": "^6.0.1",
     "primevue": "^3.31.0",
@@ -24,6 +28,8 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.4.1",
     "vue-cli-plugin-tailwind": "~3.0.0"
   },
   "browserslist": [

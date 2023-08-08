@@ -59,67 +59,134 @@
                     </div>
                 </template>
                 <template v-else-if="step === 2">
-                    <div class="w-1/2 mx-auto">
+                    <div class="w-full lg:w-1/2 mx-0 lg:mx-auto">
                         <form action="" class="flex flex-col justify-center gap- items-center" method="post">
                             <div class="w-full">
-                                <div>
-                                    <div class="py-5">
-                                        <label for="email1" class="block text-900 font-medium mb-2">Прикрепить открытый ключ
-                                            ЭЦП</label>
-                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
-                                            class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Прикрепить открытый ключ
+                                        ЭЦП</label>
+                                    <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Наименование
+                                        организации</label>
+                                    <div class="flex items-center">
+                                        <Dropdown v-model="compType" :options="type" optionLabel="name" placeholder="OOO"
+                                            class="w-full md:w-14rem rounded-xl rounded-r-none border-r-0" />
+                                        <InputText type="text"
+                                            class="border-[#ced4da] z-50 w-full rounded-xl rounded-l-none" />
                                     </div>
-                                    <div class="py-5">
-                                        <label for="password1" class="block text-900 font-medium mb-2">ФИО
-                                            руководителя</label>
-                                        <InputText id="password1" type="text" class="w-full mb-3 rounded-xl" />
-                                    </div>
-                                    <div class="py-5">
-                                        <label for="password1" class="block text-900 font-medium mb-2">Наименование
-                                            организации</label>
-                                        <div class="flex items-center">
-                                            <Dropdown v-model="compType" :options="type" optionLabel="name"
-                                                placeholder="OOO"
-                                                class="w-full md:w-14rem rounded-xl rounded-r-none border-r-0" />
-                                            <InputText id="password1" type="text"
-                                                class="border-[#ced4da] z-50 w-full rounded-xl rounded-l-none" />
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">ИНН</label>
+                                    <InputText type="text" class="w-full mb-3 rounded-xl" placeholder="ИНН" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">ОКЭД</label>
+                                    <InputText type="text" class="w-full mb-3 rounded-xl" placeholder="ОКЭД" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">ИНПО</label>
+                                    <InputText type="text" class="w-full mb-3 rounded-xl" placeholder="ИНПО" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Cтранa</label>
+                                    <Dropdown v-model="selectCountry" :options="country" optionLabel="name"
+                                        placeholder="Страна" class="w-full" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Регион</label>
+                                    <Dropdown v-model="selectRegion" :options="regions" optionLabel="name"
+                                        placeholder="Регион" class="w-full" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Город</label>
+                                    <Dropdown v-model="selectCity" :options="city" optionLabel="name" placeholder="Город"
+                                        class="w-full" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Юридический адрес</label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="Юридический адрес" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Должность руководителя</label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="Должность руководителя" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Действующий на основании
+                                    </label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="Действующий на основании" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Рабочий телефон
+                                    </label>
+                                    <InputMask id="basic" v-model="value" mask="999-99-999-99-99" class="w-full rounded-xl"
+                                        placeholder="998-99-999-99-99" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Мобильный телефон
+                                    </label>
+                                    <InputMask id="basic" v-model="value" mask="999-99-999-99-99" class="w-full rounded-xl"
+                                        placeholder="998-99-999-99-99" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Э-мэйл
+                                    </label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="E-mail" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Вебсайт
+                                    </label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="Вебсайт" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Наименование банка
+                                    </label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="Наименование банка" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">МФО
+                                    </label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl" placeholder="МФО" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">Расчетный счет
+                                    </label>
+                                    <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
+                                        placeholder="Расчетный счет" />
                                 </div>
 
-                            </div>
-                            <div class="w-full">
-                                <div class="">
+                                <div class="px-5 py-2 shadow-xl rounded-xl">
                                     <div class="py-5">
-                                        <label for="Fio" class="block text-900 font-medium mb-2">ИНН</label>
-                                        <InputText id="Fio" type="text" class="w-full mb-3 rounded-xl" placeholder="ИНН" />
+                                        <label class="block text-900 font-medium mb-2">Паспортные данные</label>
+                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+                                            class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                        <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
                                     </div>
                                     <div class="py-5">
-                                        <label for="Fio" class="block text-900 font-medium mb-2">ОКЭД</label>
-                                        <InputText id="Fio" type="text" class="w-full mb-3 rounded-xl" placeholder="ОКЭД" />
+                                        <label class="block text-900 font-medium mb-2">Устав</label>
+                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                        <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
                                     </div>
                                     <div class="py-5">
-                                        <label for="Fio" class="block text-900 font-medium mb-2">ИНПО</label>
-                                        <InputText id="Fio" type="text" class="w-full mb-3 rounded-xl" placeholder="ИНПО" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full">
-                                <div class="">
-                                    <div class="py-5">
-                                        <label for="Fio" class="block text-900 font-medium mb-2">Cтранa</label>
-                                        <Dropdown v-model="selectCountry" :options="country" optionLabel="name"
-                                            placeholder="Страна" class="w-full" />
+                                        <label class="block text-900 font-medium mb-2">Guvohnoma</label>
+                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                        <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
                                     </div>
                                     <div class="py-5">
-                                        <label for="Fio" class="block text-900 font-medium mb-2">Регион</label>
-                                        <Dropdown v-model="selectRegion" :options="regions" optionLabel="name"
-                                            placeholder="Регион" class="w-full" />
-                                    </div>
-                                    <div class="py-5">
-                                        <label for="Fio" class="block text-900 font-medium mb-2">Город</label>
-                                        <Dropdown v-model="selectCity" :options="city" optionLabel="name"
-                                            placeholder="Город" class="w-full" />
+                                        <label class="block text-900 font-medium mb-2">Приказ</label>
+                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                        <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +214,7 @@
 export default {
     data() {
         return {
-            step: 1
+            step: 2
         };
     },
     computed: {
@@ -192,5 +259,4 @@ const city = ref([
 <style>
 @import url('../assets/RegPeopleBirja.css');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
-</style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");</style>

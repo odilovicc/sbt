@@ -177,13 +177,13 @@
                                     <div class="py-5">
                                         <label class="block text-900 font-medium mb-2">Устав</label>
                                         <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
-                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                            class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
                                         <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
                                     </div>
                                     <div class="py-5">
                                         <label class="block text-900 font-medium mb-2">Guvohnoma</label>
                                         <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
-                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                            class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
                                         <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
                                     </div>
                                 </div>
@@ -192,8 +192,14 @@
                     </div>
                 </template>
                 <template v-else>
-                    <h2>Step 3 Content</h2>
-                    <p>This is the content for step 3.</p>
+                    <div class="mx-auto w-1/2 text-center lg:text-start">
+                        <h1 class="text-2xl font-bold block lg:flex items-center">Ваша заявка принята. <svg class="checkmark inline-block ml-0 lg:ml-4 w-10 h-10 my-6"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg></h1>
+                        <p class="text-[#676767] mt-4">Ваша заявка на регистрацию отправлено. Логин и пароль будет отправлен на ваш указанный электронный адрес.</p>
+                    </div>
                 </template>
             </div>
         </div>
@@ -212,7 +218,7 @@
 export default {
     data() {
         return {
-            step: 2
+            step: 3
         };
     },
     computed: {
@@ -257,4 +263,5 @@ const city = ref([
 <style>
 @import url('../assets/RegPeopleBirja.css');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");</style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+</style>

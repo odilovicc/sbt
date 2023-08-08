@@ -69,6 +69,10 @@
                                         class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
                                 </div>
                                 <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">ФИО руководителя</label>
+                                    <InputText type="text" class="w-full mb-3 rounded-xl" placeholder="ФИО руководителя" />
+                                </div>
+                                <div class="py-5">
                                     <label class="block text-900 font-medium mb-2">Наименование
                                         организации</label>
                                     <div class="flex items-center">
@@ -178,12 +182,6 @@
                                     </div>
                                     <div class="py-5">
                                         <label class="block text-900 font-medium mb-2">Guvohnoma</label>
-                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
-                                        class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
-                                        <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
-                                    </div>
-                                    <div class="py-5">
-                                        <label class="block text-900 font-medium mb-2">Приказ</label>
                                         <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
                                         class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
                                         <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>

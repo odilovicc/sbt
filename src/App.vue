@@ -2,7 +2,8 @@
   <div>
     <Navbar />
     <!-- <Login/> -->
-    <RegPeopleBirja :data="data"></RegPeopleBirja>
+    <!-- <RegPeopleBirja></RegPeopleBirja> -->
+    <RegClient></RegClient>
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 import Login from './components/Login.vue';
 import Navbar from './components/Navbar.vue';
 import RegPeopleBirja from './components/RegPeopleBirja.vue'
+import RegClient from './components/RegClient.vue'
 export default {
   components: {
     Login,
     Navbar,
-    RegPeopleBirja
+    RegPeopleBirja,
+    RegClient
   }
 }
 </script>

@@ -15,7 +15,10 @@ const items = ref([
             [
                 {
                     items: [
-                        { label: 'Вход' }, { label: 'Регистрация член биржи' }, { label: 'Регистрация член биржи' }]
+                        { label: 'Вход' },
+                        { label: 'Регистрация член биржи' },
+                        { label: 'Регистрация клиент' }
+                    ]
                 }
             ]
         ], styleClass: 'custom-menu-item'

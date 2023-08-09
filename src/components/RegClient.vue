@@ -19,7 +19,7 @@
         <div class="stepper-content" v-for="item in 3" :key="item">
             <div class="stepper-pane w-full px-0 lg:px-24 py-14" v-if="step == item">
                 <template v-if="step === 1">
-                    <h1 class="text-2xl font-bold">Регистрация новый трейдер</h1>
+                    <h1 class="text-2xl font-bold">Регистрация клиент РКП</h1>
                     <h1 class="text-lg mt-2 font-semibold text-black opacity-30 inline-block">Уже есть учетная запись?</h1>
                     <a href="#" class="ml-2 text-sky-600 text-lg mt-2 font-semibold opacity-100">Войти в систему</a>
                     <div class="shadow-lg p-4 lg:p-16 my-12">
@@ -68,10 +68,7 @@
                                     <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
                                         class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
                                 </div>
-                                <div class="py-5">
-                                    <label class="block text-900 font-medium mb-2">ФИО руководителя</label>
-                                    <InputText type="text" class="w-full mb-3 rounded-xl" placeholder="ФИО руководителя" />
-                                </div>
+
                                 <div class="py-5">
                                     <label class="block text-900 font-medium mb-2">Наименование
                                         организации</label>
@@ -113,6 +110,10 @@
                                     <label class="block text-900 font-medium mb-2">Юридический адрес</label>
                                     <InputText type="text" class="border-[#ced4da] w-full rounded-xl"
                                         placeholder="Юридический адрес" />
+                                </div>
+                                <div class="py-5">
+                                    <label class="block text-900 font-medium mb-2">ФИО руководителя</label>
+                                    <InputText type="text" class="w-full mb-3 rounded-xl" placeholder="ФИО руководителя" />
                                 </div>
                                 <div class="py-5">
                                     <label class="block text-900 font-medium mb-2">Должность руководителя</label>
@@ -182,6 +183,12 @@
                                     </div>
                                     <div class="py-5">
                                         <label class="block text-900 font-medium mb-2">Guvohnoma</label>
+                                        <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
+                                            class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
+                                        <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>
+                                    </div>
+                                    <div class="py-5">
+                                        <label class="block text-900 font-medium mb-2">Приказ</label>
                                         <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*"
                                             class="w-full mb-3" :maxFileSize="1000000" @upload="onUpload" />
                                         <span class="text-red-600 text-sm">*Прикрепите отсканированный документ</span>

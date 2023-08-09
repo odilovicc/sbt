@@ -7,7 +7,8 @@
      -->
      <!-- <Users></Users> -->
      <!-- <Roles></Roles> -->
-     <Access></Access>
+     <!-- <Access></Access> -->
+     <Logs></Logs>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import RegClient from './components/Registration/RegClient.vue'
 import Users from './components/Administrator/Users.vue'
 import Roles from './components/Administrator/Roles.vue'
 import Access from './components/Administrator/Access.vue';
+import Logs from './components/Administrator/Logs.vue';
 export default {
   components: {
     Login,
@@ -27,7 +29,8 @@ export default {
     RegClient,
     Users,
     Roles,
-    Access
+    Access,
+    Logs,
   }
 }
 </script>

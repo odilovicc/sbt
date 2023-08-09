@@ -132,7 +132,7 @@
     border-radius: 4px;
     width: fit-content;
     font-size: 0.75rem;
-    color: #333;
+    /* color: #333; */
     background-color: #f0f0f0;
     border-color: #f0f0f0;
   }
@@ -141,9 +141,7 @@
     opacity: 0.5;
     pointer-events: none;
   }
-  input {
-    border: 1px solid #ced4da !important;
-  }
+
   .checkmark__circle {
     stroke-dasharray: 166;
     stroke-dashoffset: 166;

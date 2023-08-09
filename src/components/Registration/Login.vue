@@ -31,9 +31,6 @@
 </script>
  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.p-button {
-  color: #fff !important;
-}
 
 .bg {
   background: url("../../assets/bg-2.jpg");

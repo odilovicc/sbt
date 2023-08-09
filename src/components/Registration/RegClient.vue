@@ -267,7 +267,7 @@ const city = ref([
     { name: 'Газалкент', code: 'GZL' },
 ]);
 </script>
-<style>
+<style scoped>
 @import url('../../assets/RegClient.css');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");

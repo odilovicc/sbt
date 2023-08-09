@@ -4,7 +4,7 @@
     <Card class="w-full lg:w-1/5 mx-auto my-auto bg-transparent">
       <template #content>
         <div class="mx-auto text-center">
-          <img src="../assets/logo-letter-13.png" class="mx-auto my-4" alt="">
+          <img src="../../assets/logo-letter-13.png" class="mx-auto my-4" alt="">
           <h1 class="text-2xl font-bold mb-4">Доступ к СЭБТ</h1>
           <h1 class="">Введите свои данные для входа в систему:</h1>
           <div class="py-5 mx-auto">
@@ -36,6 +36,6 @@
 }
 
 .bg {
-  background: url("../assets/bg-2.jpg");
+  background: url("../../assets/bg-2.jpg");
 }
 </style>

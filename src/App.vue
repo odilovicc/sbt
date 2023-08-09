@@ -3,15 +3,16 @@
     <Navbar />
     <!-- <Login/> -->
     <!-- <RegPeopleBirja></RegPeopleBirja> -->
-    <RegClient></RegClient>
+    <!-- <RegClient></RegClient>
+     -->
   </div>
 </template>
 
 <script>
-import Login from './components/Login.vue';
+import Login from './components/Registration/Login.vue';
 import Navbar from './components/Navbar.vue';
-import RegPeopleBirja from './components/RegPeopleBirja.vue'
-import RegClient from './components/RegClient.vue'
+import RegPeopleBirja from './components/Registration/RegPeopleBirja.vue'
+import RegClient from './components/Registration/RegClient.vue'
 export default {
   components: {
     Login,

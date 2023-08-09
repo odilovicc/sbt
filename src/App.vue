@@ -5,6 +5,7 @@
     <!-- <RegPeopleBirja></RegPeopleBirja> -->
     <!-- <RegClient></RegClient>
      -->
+     <Users></Users>
   </div>
 </template>
 
@@ -13,12 +14,14 @@ import Login from './components/Registration/Login.vue';
 import Navbar from './components/Navbar.vue';
 import RegPeopleBirja from './components/Registration/RegPeopleBirja.vue'
 import RegClient from './components/Registration/RegClient.vue'
+import Users from './components/Administrator/Users.vue'
 export default {
   components: {
     Login,
     Navbar,
     RegPeopleBirja,
-    RegClient
+    RegClient,
+    Users
   }
 }
 </script>

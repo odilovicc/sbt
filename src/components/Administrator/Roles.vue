@@ -39,7 +39,7 @@ onMounted(() => {
 });
 
 const role = ref();
-const visible = ref(true);
+const visible = ref(false);
 import { useToast } from "primevue/usetoast";
 const toast = useToast();
 

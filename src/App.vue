@@ -6,7 +6,8 @@
     <!-- <RegClient></RegClient>
      -->
      <!-- <Users></Users> -->
-     <Roles></Roles>
+     <!-- <Roles></Roles> -->
+     <Access></Access>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import RegPeopleBirja from './components/Registration/RegPeopleBirja.vue'
 import RegClient from './components/Registration/RegClient.vue'
 import Users from './components/Administrator/Users.vue'
 import Roles from './components/Administrator/Roles.vue'
+import Access from './components/Administrator/Access.vue';
 export default {
   components: {
     Login,
@@ -24,7 +26,8 @@ export default {
     RegPeopleBirja,
     RegClient,
     Users,
-    Roles
+    Roles,
+    Access
   }
 }
 </script>

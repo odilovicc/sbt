@@ -41,7 +41,7 @@
             <Column field="number" header="№"></Column>
             <Column field="role" header="Роль"></Column>
         </DataTable> -->
-        <DataTable v-model:selection="roles" :value="role" dataKey="id" tableStyle="min-width: 50rem">
+        <DataTable v-model:selection="roles" showGridlines  :value="role" dataKey="id">
             <Column selectionMode="single" headerStyle="width: 3rem"></Column>
             <Column field="number" header="№"></Column>
             <Column field="role" header="Роль"></Column>

@@ -12,7 +12,7 @@
                 <hr class="my-5">
                 <div class="px-5 w-full">
                     <Button label="Отменить" severity="secondary" />
-                    <Button label="Сохранить" class="text-[#8B5CF6] lg:mx-3 mx-0 my-4 lg:my-0" @click="showSuccess"/>
+                    <Button label="Сохранить" class=" lg:mx-3 mx-0 my-4 lg:my-0" @click="showSuccess"/>
                     <Toast />
                 </div>
 
@@ -22,7 +22,7 @@
             <Column field="number" header="№"></Column>
             <Column field="role" header="Роль"></Column>
         </DataTable> -->
-        <DataTable v-model:selection="roles" :value="role" dataKey="id" tableStyle="min-width: 50rem">
+        <DataTable v-model:selection="roles" showGridlines  :value="role" dataKey="id">
             <Column selectionMode="single" headerStyle="width: 3rem"></Column>
             <Column field="number" header="№"></Column>
             <Column field="role" header="Роль"></Column>
@@ -52,7 +52,4 @@ const showSuccess = () => {
 
 </script>
 <style scoped>
-.p-button-label {
-    color: #8B5CF6 !important;
-}
 </style>

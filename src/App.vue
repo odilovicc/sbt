@@ -9,7 +9,8 @@
      <!-- <Roles></Roles> -->
      <!-- <Access></Access> -->
      <!-- <Logs></Logs> -->
-     <Tarif></Tarif>
+     <!-- <Tarif></Tarif> -->
+     <ExchangesTeam></ExchangesTeam>
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import Roles from './components/Administrator/Roles.vue'
 import Access from './components/Administrator/Access.vue';
 import Logs from './components/Administrator/Logs.vue';
 import Tarif from './components/Administrator/Tarif.vue';
+import ExchangesTeam from './components/Moderator/ExchangesTeam.vue'
 export default {
   components: {
     Login,
@@ -33,7 +35,8 @@ export default {
     Roles,
     Access,
     Logs,
-    Tarif
+    Tarif,
+    ExchangesTeam
   }
 }
 </script>

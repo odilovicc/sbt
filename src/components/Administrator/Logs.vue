@@ -10,8 +10,6 @@
             <Column field="action" header="Действие"></Column>
             <Column field="explanation" header="Пояснение"></Column>
             <Column field="ip" header="IP-Адрес"></Column>
-            <Column headerStyle="width: 10rem;"></Column>
-
         </DataTable>
     </div>
 </template>

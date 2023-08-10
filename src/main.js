@@ -1,7 +1,7 @@
 import Particles from "vue3-particles";
 
 createApp(App).use(Particles);
-import "@/assets/theme.css";
+import "primevue/resources/themes/soho-light/theme.css";
 import "primevue/resources/primevue.min.css"; /* Deprecated */
 import "primeicons/primeicons.css";
 import { useToast } from "primevue/usetoast";

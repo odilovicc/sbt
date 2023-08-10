@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <Navbar />
+  <Navbar />
+  <div class="my-14 w-[90vw] rounded-2xl mx-auto py-5 bg-white p-7 shadow-2xl appear">
     <!-- <Login/> -->
     <!-- <RegPeopleBirja></RegPeopleBirja> -->
-    <!-- <RegClient></RegClient>
-     -->
+    <!-- <RegClient></RegClient> -->
      <!-- <Users></Users> -->
      <!-- <Roles></Roles> -->
      <!-- <Access></Access> -->
@@ -53,5 +52,29 @@ export default {
 
 * {
   font-family: "Poppins", sans-serif;
+}
+.appear{
+  animation-duration: 0.75s;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-fill-mode: backwards;
+}
+.animate.pop {
+  animation-name: animate-pop;
+}
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+body{
+  background: #e3eff6;
 }
 </style>

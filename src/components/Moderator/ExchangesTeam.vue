@@ -1,4 +1,5 @@
 <template>
+
     <div class="mx-auto py-20 px-24">
         <DataTable :value="teamexchange" showGridlines class="mx-auto">
             <h1 class="font-2xl font-semibold mb-10">СПИСОК ЧЛЕНОВ БИРЖИ</h1>
@@ -58,3 +59,6 @@ const getSeverity = (teamexchange) => {
 };
 
 </script>
+<style scoped>
+@import url('../../assets/bg.css');
+</style>

@@ -8,7 +8,8 @@
      <!-- <Users></Users> -->
      <!-- <Roles></Roles> -->
      <!-- <Access></Access> -->
-     <Logs></Logs>
+     <!-- <Logs></Logs> -->
+     <Tarif></Tarif>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import Users from './components/Administrator/Users.vue'
 import Roles from './components/Administrator/Roles.vue'
 import Access from './components/Administrator/Access.vue';
 import Logs from './components/Administrator/Logs.vue';
+import Tarif from './components/Administrator/Tarif.vue';
 export default {
   components: {
     Login,
@@ -31,6 +33,7 @@ export default {
     Roles,
     Access,
     Logs,
+    Tarif
   }
 }
 </script>

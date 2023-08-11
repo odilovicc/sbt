@@ -59,6 +59,3 @@ const getSeverity = (teamexchange) => {
 };
 
 </script>
-<style scoped>
-@import url('../../assets/bg.css');
-</style>

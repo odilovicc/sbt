@@ -11,7 +11,8 @@
      <!-- <Tarif></Tarif> -->
      <!-- <ExchangesTeam></ExchangesTeam> -->
      <!-- <Clients></Clients> -->
-     <Requests></Requests>
+     <!-- <Requests></Requests> -->
+     <WaitingRequests></WaitingRequests>
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import Tarif from './components/Administrator/Tarif.vue';
 import ExchangesTeam from './components/Moderator/ExchangesTeam.vue'
 import Clients from './components/Moderator/Clients.vue';
 import Requests from './components/Moderator/Requests.vue';
+import WaitingRequests from './components/Moderator/WaitingRequests.vue';
 export default {
   components: {
     Login,
@@ -41,7 +43,8 @@ export default {
     Tarif,
     ExchangesTeam,
     Clients,
-    Requests
+    Requests,
+    WaitingRequests
   }
 }
 </script>
@@ -52,6 +55,8 @@ export default {
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+@import url('../node_modules/primeflex/primeflex.css');
+
 
 * {
   font-family: "Poppins", sans-serif;

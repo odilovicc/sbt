@@ -10,7 +10,8 @@
      <!-- <Logs></Logs> -->
      <!-- <Tarif></Tarif> -->
      <!-- <ExchangesTeam></ExchangesTeam> -->
-     <Clients></Clients>
+     <!-- <Clients></Clients> -->
+     <Requests></Requests>
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import Logs from './components/Administrator/Logs.vue';
 import Tarif from './components/Administrator/Tarif.vue';
 import ExchangesTeam from './components/Moderator/ExchangesTeam.vue'
 import Clients from './components/Moderator/Clients.vue';
+import Requests from './components/Moderator/Requests.vue';
 export default {
   components: {
     Login,
@@ -39,6 +41,7 @@ export default {
     Tarif,
     ExchangesTeam,
     Clients,
+    Requests
   }
 }
 </script>

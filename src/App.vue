@@ -12,7 +12,9 @@
      <!-- <ExchangesTeam></ExchangesTeam> -->
      <!-- <Clients></Clients> -->
      <!-- <Requests></Requests> -->
-     <WaitingRequests></WaitingRequests>
+     <!-- <WaitingRequests></WaitingRequests> -->
+     <!-- <Protocols></Protocols> -->
+     <viewExchangesContent></viewExchangesContent>
   </div>
 </template>
 
@@ -30,6 +32,8 @@ import ExchangesTeam from './components/Moderator/ExchangesTeam.vue'
 import Clients from './components/Moderator/Clients.vue';
 import Requests from './components/Moderator/Requests.vue';
 import WaitingRequests from './components/Moderator/WaitingRequests.vue';
+import Protocols from './components/Moderator/Protocols.vue';
+import viewExchangesContent from './components/Moderator/viewExchangesContent.vue'
 export default {
   components: {
     Login,
@@ -44,7 +48,9 @@ export default {
     ExchangesTeam,
     Clients,
     Requests,
-    WaitingRequests
+    WaitingRequests,
+    Protocols,
+    viewExchangesContent
   }
 }
 </script>

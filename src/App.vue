@@ -1,6 +1,5 @@
 <template>
   <Navbar />
-  <div class="my-14 w-[90vw] rounded-2xl mx-auto py-5 bg-white p-7 shadow-2xl appear">
     <!-- <Login/> -->
     <!-- <RegPeopleBirja></RegPeopleBirja> -->
     <!-- <RegClient></RegClient> -->
@@ -13,9 +12,8 @@
      <!-- <Clients></Clients> -->
      <!-- <Requests></Requests> -->
      <!-- <WaitingRequests></WaitingRequests> -->
-     <Protocols></Protocols>
-     <!-- <viewExchangesContent></viewExchangesContent> -->
-  </div>
+     <!-- <Protocols></Protocols> -->
+     <viewExchangesContent></viewExchangesContent>
 </template>
 
 <script>
@@ -61,7 +59,6 @@ export default {
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
-@import url('../node_modules/primeflex/primeflex.css');
 
 
 * {

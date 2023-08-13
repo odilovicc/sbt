@@ -1,6 +1,6 @@
 
 <template>
-    <div class="card">
+    <div class="w-[90vw] mx-auto">
         <h1 class="text-2xl font-bold my-10">Заявки на брокерское обслуживание</h1>
         <DataTable :value="products" showGridlines="" tableStyle="min-width: 50rem">
             <Column field="number" header="№"></Column>

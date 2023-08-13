@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="w-[90vw] mx-auto my-10">
         <DataTable :value="products" showGridlines tableStyle="min-width: 50rem">
             <Column field="number" header="№"></Column>
             <Column field="bk" header="БК"></Column>

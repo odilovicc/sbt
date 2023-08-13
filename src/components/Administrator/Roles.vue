@@ -12,7 +12,7 @@
                 <hr class="my-5">
                 <div class="px-5 w-full">
                     <Button label="Отменить" severity="secondary" />
-                    <Button label="Сохранить" class=" lg:mx-3 mx-0 my-4 lg:my-0" @click="showSuccess"/>
+                    <Button label="Сохранить" class=" lg:mx-3 mx-0 my-4 lg:my-0" severity="info" @click="showSuccess"/>
                     <Toast />
                 </div>
 
@@ -23,8 +23,7 @@
             <Column field="role" header="Роль"></Column>
         </DataTable> -->
         <DataTable v-model:selection="roles" showGridlines  :value="role" dataKey="id">
-            <Column selectionMode="single" headerStyle="width: 3rem"></Column>
-            <Column field="number" header="№"></Column>
+            <Column field="number" class="w-14 text-center" header="№"></Column>
             <Column field="role" header="Роль"></Column>
         </DataTable>
     </div>

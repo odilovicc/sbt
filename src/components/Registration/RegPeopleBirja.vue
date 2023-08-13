@@ -204,7 +204,7 @@
             </div>
         </div>
 
-        <div class="controls flex justify-around">
+        <div class="flex justify-around">
             <button
                 class="btn p-5 rounded-full text-2xl bg-[#75CC65] text-white border-2 border-transparent transition duration-200 hover:border-[#75CC65] hover:bg-white hover:text-[#75CC65]"
                 @click="step--" :disabled="step == 1"><i class="fas fa-arrow-left"></i></button>

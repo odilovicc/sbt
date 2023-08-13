@@ -42,8 +42,7 @@
             <Column field="role" header="Роль"></Column>
         </DataTable> -->
         <DataTable v-model:selection="roles" showGridlines  :value="role" dataKey="id">
-            <Column selectionMode="single" headerStyle="width: 3rem"></Column>
-            <Column field="number" header="№"></Column>
+            <Column field="number" class="w-14" header="№"></Column>
             <Column field="role" header="Роль"></Column>
         </DataTable>
     </div>
@@ -71,7 +70,4 @@ const showSuccess = () => {
 
 </script>
 <style scoped>
-.p-button-label {
-    color: #8B5CF6 !important;
-}
 </style>

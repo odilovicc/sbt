@@ -13,8 +13,8 @@
      <!-- <Clients></Clients> -->
      <!-- <Requests></Requests> -->
      <!-- <WaitingRequests></WaitingRequests> -->
-     <!-- <Protocols></Protocols> -->
-     <viewExchangesContent></viewExchangesContent>
+     <Protocols></Protocols>
+     <!-- <viewExchangesContent></viewExchangesContent> -->
   </div>
 </template>
 

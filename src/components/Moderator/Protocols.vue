@@ -97,21 +97,50 @@
                     <i class="pi pi-add mr-2"></i>
                     <span>НОВЫЙ ДОКУМЕНТ</span>
                 </template>
-                <DataTable :value="products" tableStyle="min-width: 50rem">
+                <DataTable :value="documents" tableStyle="min-width: 50rem">
                     <Column field="trades" header="Торги"></Column>
-                    <Column field="produces" header="БК прод."></Column>
-                    <Column field="buys" header="БК покуп."></Column>
-                    <Column field="item" header="Товар"></Column>
-                    <Column field="size" header="Кол-во"></Column>
-                    <Column field="price" header="Цена"></Column>
-                    <Column field="sum" header="Сумма"></Column>
-                    <Column field="basis" header="Базис"></Column>
-                    <Column field="punkt" header="Пункт"></Column>
-                    <Column header="Status">
-                        <template #body="slotProps">
-                            <Tag :value="slotProps.data.protocolStatus" :severity="switchSeverity(slotProps.data)" />
+                    <Column field="produces" header="БК прод.">
+                        <template #body="documentCycle">
+                            <div class="text-center">
+                                <h1>{{ documentCycle.data.produces }}</h1>
+                                <h1 class="text-red-500">{{ documentCycle.data.produceCompany }}</h1>
+                            </div>
                         </template>
                     </Column>
+                    <Column field="buys" header="БК покуп.">
+                        <template #body="documentCycle">
+                            <div class="text-center">
+                                <h1>{{ documentCycle.data.buys }}</h1>
+                                <h1 class="text-red-500">{{ documentCycle.data.buysCompany }}</h1>
+                            </div>
+                        </template>
+                    </Column>
+                    <Column field="item" header="Товар"></Column>
+                    <Column field="size" header="Кол-во">
+                        <template #body="documentCycle">
+                            <h1>{{ documentCycle.data.size }}</h1>
+                            <h1 class="text-red-500">{{ documentCycle.data.sizeCurrency }}</h1>
+                        </template>
+                    </Column>
+                    <Column field="price" header="Цена">
+                        <template #body="documentCycle">
+                            <h1>{{ documentCycle.data.price }}</h1>
+                            <h1 class="text-red-500">{{ documentCycle.data.priceCurrency }}</h1>
+                        </template>
+                    </Column>
+                    <Column field="sum" header="Сумма">
+                        <template #body="documentCycle">
+                            <h1>{{ documentCycle.data.sum }}</h1>
+                            <h1 class="text-red-500">{{ documentCycle.data.sumCurrrency }}</h1>
+                        </template>
+                    </Column>
+                    <Column field="basis" header="Базис">
+                        <template #body="documentCycle">
+                            <h1>{{ documentCycle.data.basis }}</h1>
+                            <h1 class="text-red-500">{{ documentCycle.data.basisSrok }}</h1>
+                        </template>
+                    </Column>
+                    <Column field="punkt" header="Пункт"></Column>
                 </DataTable>
             </TabPanel>
         </TabView>
@@ -120,6 +149,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { Protocols } from '@/assets/js/protocols';
+import { newDocument } from '@/assets/js/newDocument';
 
 onMounted(() => {
     Protocols.getProtocolsMini().then((data) => (protocols.value = data));
@@ -127,7 +157,10 @@ onMounted(() => {
 onMounted(() => {
     Protocols.getTradesProtocolMini().then((data) => (trades.value = data));
 });
-
+onMounted(() => {
+    newDocument.getDocumentDataMini().then((data) => (documents.value = data));
+});
+const documents = ref()
 const protocols = ref();
 const trades = ref();
 const getSeverity = (product) => {
@@ -164,7 +197,7 @@ const switchSeverity = (protocolStatus) => {
 
 </script>
 <script>
-    export default {
-        name: 'Protocols'
-    }
+export default {
+    name: 'Protocols'
+}
 </script>

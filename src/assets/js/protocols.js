@@ -61,22 +61,19 @@ export const Protocols = {
       },
     ];
   },
-
-  exchangesContent(){
+  newDocument() {
     return [
       {
-        contact: '№ 359/3 от 12.03.2020 г.'
+        trades: 'Торги'
       }
     ]
   },
+
 
   getProtocolsMini() {
     return Promise.resolve(this.getProtocols().slice(0, 5));
   },
   getTradesProtocolMini() {
     return Promise.resolve(this.tradesProtocol().slice(0, 5));
-  },
-  getExchangesContent() {
-    return Promise.resolve(this.exchangesContent().slice(0, 5));
   },
 };

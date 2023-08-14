@@ -1,5 +1,6 @@
 <template>
     <div class="w-[90vw] mx-auto my-10">
+        <h1 class="text-2xl font-semibold my-10">Договор поручение</h1>
         <DataTable :value="products" tableStyle="min-width: 50rem" header="Договор поручение">
             <Column field="number" header="Name"></Column>
             <Column field="client" header="Клиент"></Column>
@@ -9,9 +10,37 @@
                     <Tag :value="slotProps.data.assignmentStatus" :severity="getSeverity(slotProps.data)" />
                 </template>
             </Column>
-            <Column>
-                <template #body class="w-14">
-                    <Button icon="pi pi-file" />
+            <Column class="w-14">
+                <template #body>
+                    <Button icon="pi pi-file" severity="info" @click="visible = true" />
+                    <Dialog v-model:visible="visible" modal :style="{ width: '50vw' }">
+                        <div class="flex items-center justify-center px-5 gap-12">
+                            <div class="w-1/2 bg-[rgb(23,23,23)] rounded-md py-10">
+                                <img src="http://213.230.99.183:444/sebt/img/pdf.svg" class="w-1/3 mx-auto" alt="">
+                                <h1 class="text-2xl font-medium text-center mt-12">Складская справка</h1>
+                            </div>
+                            <div class="w-1/2 bg-[rgb(23,23,23)] rounded-md py-10">
+                                <img src="http://213.230.99.183:444/sebt/img/doc.svg" class="w-1/3 mx-auto" alt="">
+                                <h1 class="text-2xl font-medium text-center mt-12">Гарантийное письмо</h1>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="py-5 flex items-center">
+                                <label for="client" class="w-1/2">Клиент <span class="text-red-500">*</span></label>
+                                <InputText class="w-1/2 mr-auto" />
+                            </div>
+                            <div class="py-5 flex items-center">
+                                <label for="client" class="w-full">Трейдер <span class="text-red-500">*</span></label>
+                                <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Выберите"
+                                    class="w-full md:w-14rem" />
+                            </div>
+                        </div>
+                        <template #footer>
+                            <Button label="Отмена" severity="info" />
+                            <Button label="Сохранить" severity="success" @click="show()" />
+                            <Toast />
+                        </template>
+                    </Dialog>
                 </template>
             </Column>
         </DataTable>
@@ -26,9 +55,7 @@ onMounted(() => {
 });
 
 const products = ref();
-const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-};
+const visible = ref(false)
 const getSeverity = (product) => {
     switch (product.assignmentStatus) {
         case 'Новый':
@@ -44,5 +71,16 @@ const getSeverity = (product) => {
             return null;
     }
 };
+const selectedCity = ref();
+const cities = ref([
+    { name: '123', },
+    { name: '321', },
+    { name: '213', },
+]);
+import { useToast } from "primevue/usetoast";
+const toast = useToast();
 
+const show = () => {
+    toast.add({ severity: 'info', summary: 'Сохранено', detail: 'Успешно сохранено!', life: 3000 });
+}; 
 </script>

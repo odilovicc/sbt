@@ -1,21 +1,22 @@
 <template>
   <Navbar />
-    <!-- <Login/> -->
-    <!-- <RegPeopleBirja></RegPeopleBirja> -->
-    <!-- <RegClient></RegClient> -->
-     <!-- <Users></Users> -->
-     <!-- <Roles></Roles> -->
-     <!-- <Access></Access> -->
-     <!-- <Logs></Logs> -->
-     <!-- <Tarif></Tarif> -->
-     <!-- <ExchangesTeam></ExchangesTeam> -->
-     <!-- <Clients></Clients> -->
-     <!-- <Requests></Requests> -->
-     <!-- <WaitingRequests></WaitingRequests> -->
-     <!-- <Protocols></Protocols> -->
-     <!-- <viewExchangesContent></viewExchangesContent> -->
-     <!-- <Products></Products> -->
-     <forPayment></forPayment>
+  <!-- <Login/> -->
+  <!-- <RegPeopleBirja></RegPeopleBirja> -->
+  <!-- <RegClient></RegClient> -->
+  <!-- <Users></Users> -->
+  <!-- <Roles></Roles> -->
+  <!-- <Access></Access> -->
+  <!-- <Logs></Logs> -->
+  <!-- <Tarif></Tarif> -->
+  <!-- <ExchangesTeam></ExchangesTeam> -->
+  <!-- <Clients></Clients> -->
+  <!-- <Requests></Requests> -->
+  <!-- <WaitingRequests></WaitingRequests> -->
+  <!-- <Protocols></Protocols> -->
+  <!-- <viewExchangesContent></viewExchangesContent> -->
+  <!-- <Products></Products> -->
+  <!-- <forPayment></forPayment> -->
+  <bkAssignment></bkAssignment>
 </template>
 
 <script>
@@ -35,7 +36,8 @@ import WaitingRequests from './components/Moderator/WaitingRequests.vue';
 import Protocols from './components/Moderator/Protocols.vue';
 import viewExchangesContent from './components/Moderator/viewExchangesContent.vue'
 import Products from './components/Moderator/Products.vue';
-import forPayment from './components/Moderator/forPayment.vue'
+import forPayment from './components/Moderator/forPayment.vue';
+import bkAssignment from './components/Broker/bkAssignment.vue'
 export default {
   components: {
     Login,
@@ -54,7 +56,8 @@ export default {
     Protocols,
     viewExchangesContent,
     Products,
-    forPayment
+    forPayment,
+    bkAssignment
   }
 }
 </script>
@@ -70,28 +73,32 @@ export default {
 * {
   font-family: "Poppins", sans-serif;
 }
-.appear{
+
+.appear {
   animation-duration: 0.75s;
   animation-duration: 1s;
   animation-delay: 0.5s;
   animation-name: animate-pop;
-  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
   animation-fill-mode: backwards;
 }
+
 .animate.pop {
   animation-name: animate-pop;
 }
+
 @keyframes animate-pop {
   0% {
     opacity: 0;
     transform: scale(0.5, 0.5);
   }
+
   100% {
     opacity: 1;
     transform: scale(1, 1);
   }
 }
-body{
+
+body {
   /* background: #e3eff6; */
-}
-</style>
+}</style>

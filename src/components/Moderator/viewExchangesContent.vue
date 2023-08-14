@@ -8,63 +8,62 @@
 </div> -->
 <template>
     <div class="w-[90vw] mx-auto my-10">
-        <div class="flex gap-12">
-            <div class="bg-white rounded-md shadow-xl">
+        <div class="flex gap-12 ">
+            <div class="bg-[#1E1E1E] py-5 rounded-md shadow-xl">
                 <header class="px-10 py-3 flex items-center">
                     <h1 class="font-medium text-xl">Просмотр биржевого контракта</h1>
                     <Button label="Вернуться в список" icon="pi pi-arrow-left" text class="ml-auto" />
                 </header>
-                <hr>
-                <div class="px-10 py-5">
+                <div class="px-10 py-5 ">
                     <table class="table w-full">
                         <tbody>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Контракт</td>
-                                <td class="border-y-2 pl-2 ">№ 359/3 от 12.03.2020 г.</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Статус</td>
-                                <td class="border-y-2 pl-2 ">на бирже</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Контракт</td>
+                                <td class=" pl-2 ">№ 359/3 от 12.03.2020 г.</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Статус</td>
+                                <td class=" pl-2 ">на бирже</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Место регистрации</td>
-                                <td class="border-y-2 pl-2">AJ "Respublika ko'p tarmoqli agrosanoat birjasi"</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Тип торгов</td>
-                                <td class="border-y-2 pl-2 ">Биржевые торги</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Место регистрации</td>
+                                <td class=" pl-2">AJ "Respublika ko'p tarmoqli agrosanoat birjasi"</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Тип торгов</td>
+                                <td class=" pl-2 ">Биржевые торги</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">№ протокола торгов</td>
-                                <td class="border-y-2 pl-2 ">12</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Дата торгов</td>
-                                <td class="border-y-2 pl-2 ">17.01.2020 г.</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">№ протокола торгов</td>
+                                <td class=" pl-2 ">12</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Дата торгов</td>
+                                <td class=" pl-2 ">17.01.2020 г.</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Вид сделок</td>
-                                <td class="border-y-2 pl-2 ">Спот</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Тип сделок</td>
-                                <td class="border-y-2 pl-2 ">Внутренний</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Вид сделок</td>
+                                <td class=" pl-2 ">Спот</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Тип сделок</td>
+                                <td class=" pl-2 ">Внутренний</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">БК продавца</td>
-                                <td class="border-y-2 pl-2 ">214 - MChJ "YOG`-MOY SAVDO"</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">БК покупателя</td>
-                                <td class="border-y-2 pl-2 ">471 - XK "SAIDMUROD INVEST"</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">БК продавца</td>
+                                <td class=" pl-2 ">214 - MChJ "YOG`-MOY SAVDO"</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">БК покупателя</td>
+                                <td class=" pl-2 ">471 - XK "SAIDMUROD INVEST"</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Трейдер-продавец</td>
-                                <td class="border-y-2 pl-2 ">Исмаилов Азиз Яхъяевич</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Трейдер-покупатель</td>
-                                <td class="border-y-2 pl-2 ">Kabulov Saidmurod Ergashovich</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Трейдер-продавец</td>
+                                <td class=" pl-2 ">Исмаилов Азиз Яхъяевич</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Трейдер-покупатель</td>
+                                <td class=" pl-2 ">Kabulov Saidmurod Ergashovich</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Сумма</td>
-                                <td class="border-y-2 pl-2 " colspan="3">17 500 000,00 сум</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Сумма</td>
+                                <td class=" pl-2 " colspan="3">17 500 000,00 сум</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Товар</td>
-                                <td class="border-y-2 pl-2 " colspan="3">Шрот хлопковый</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Товар</td>
+                                <td class=" pl-2 " colspan="3">Шрот хлопковый</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Внешняя ссылка</td>
-                                <td class="border-y-2 pl-2 " colspan="3">
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Внешняя ссылка</td>
+                                <td class=" pl-2 " colspan="3">
                                     https://agrobirja.uz/sebt/public/contract.php?contract=a8aece0882371f438c829bccb995a927
                                 </td>
                             </tr>
@@ -72,16 +71,16 @@
                                 <th colspan="4">Стороны биржевого контракта</th>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Продавец</td>
-                                <td class="border-y-2 pl-2 ">Paxtakor Sifat Yog MCHJ</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Покупатель</td>
-                                <td class="border-y-2 pl-2 ">"QAYIRMA AGRO LYUKS" fermer xo`jaligi</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Продавец</td>
+                                <td class=" pl-2 ">Paxtakor Sifat Yog MCHJ</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Покупатель</td>
+                                <td class=" pl-2 ">"QAYIRMA AGRO LYUKS" fermer xo`jaligi</td>
                             </tr>
                             <tr>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Биржевой сбор</td>
-                                <td class="border-y-2 pl-2 ">52 500,00 сум (0.3%)</td>
-                                <td class="py-2 pr-5 pl-2 border-y-2 bg-[#C7E2FF]">Биржевой сбор</td>
-                                <td class="border-y-2 pl-2 ">0,00</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Биржевой сбор</td>
+                                <td class=" pl-2 ">52 500,00 сум (0.3%)</td>
+                                <td class="py-2 pr-5 pl-2  bg-[#CE93D8]">Биржевой сбор</td>
+                                <td class=" pl-2 ">0,00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -89,7 +88,7 @@
             </div>
             <Tree :value="nodes" class="w-1/2 md:w-30rem h-max shadow-xl border-0"></Tree>
         </div>
-        <div class="bg-white rounded-md shadow-xl mt-14">
+        <div class="rounded-md shadow-xl mt-14">
             <header class="px-10 py-3 flex items-center">
                 <h1 class="font-medium text-xl">Начисления по контракту</h1>
                 <Button label="Выписать счет" icon="pi pi-plus" text class="ml-auto" @click="visible = true" />

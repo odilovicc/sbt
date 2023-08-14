@@ -11,7 +11,7 @@
                     <Tag :value="slotProps.data.status" :severity="getSeverity(slotProps.data)" />
                 </template>
             </Column>
-            <Column field="numbk">
+            <Column field="numbk" class="w-14">
                 <template #body>
                     <Button icon="pi pi-pencil" severity="info" @click="visible = true" />
                     <Dialog v-model:visible="visible" modal header="Утверждение заявки" :style="{ width: '50vw' }">

@@ -13,7 +13,9 @@
      <!-- <Requests></Requests> -->
      <!-- <WaitingRequests></WaitingRequests> -->
      <!-- <Protocols></Protocols> -->
-     <viewExchangesContent></viewExchangesContent>
+     <!-- <viewExchangesContent></viewExchangesContent> -->
+     <!-- <Products></Products> -->
+     <forPayment></forPayment>
 </template>
 
 <script>
@@ -32,6 +34,8 @@ import Requests from './components/Moderator/Requests.vue';
 import WaitingRequests from './components/Moderator/WaitingRequests.vue';
 import Protocols from './components/Moderator/Protocols.vue';
 import viewExchangesContent from './components/Moderator/viewExchangesContent.vue'
+import Products from './components/Moderator/Products.vue';
+import forPayment from './components/Moderator/forPayment.vue'
 export default {
   components: {
     Login,
@@ -48,7 +52,9 @@ export default {
     Requests,
     WaitingRequests,
     Protocols,
-    viewExchangesContent
+    viewExchangesContent,
+    Products,
+    forPayment
   }
 }
 </script>
@@ -86,6 +92,6 @@ export default {
   }
 }
 body{
-  background: #e3eff6;
+  /* background: #e3eff6; */
 }
 </style>

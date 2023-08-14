@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[90vw] mx-auto my-10 p-10 bg-white">
+    <div class="w-[90vw] mx-auto my-10">
         <TabView>
             <TabPanel>
                 <template #header>

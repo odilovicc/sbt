@@ -1,5 +1,5 @@
 
-import "primevue/resources/themes/lara-light-purple/theme.css";
+import "primevue/resources/themes/md-dark-deeppurple/theme.css";
 import "primevue/resources/primevue.min.css"; /* Deprecated */
 import "primeicons/primeicons.css";
 import { useToast } from "primevue/usetoast";

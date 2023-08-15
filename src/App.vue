@@ -17,7 +17,8 @@
   <!-- <Products></Products> -->
   <!-- <forPayment></forPayment> -->
   <!-- <bkAssignment></bkAssignment> -->
-  <listTraders></listTraders>
+  <!-- <listTraders></listTraders> -->
+  <clientResident></clientResident>
 </template>
 
 <script>
@@ -40,6 +41,7 @@ import Products from './components/Moderator/Products.vue';
 import forPayment from './components/Moderator/forPayment.vue';
 import bkAssignment from './components/Broker/bkAssignment.vue';
 import listTraders from './components/Broker/listTraders.vue';
+import clientResident from './components/Broker/clientResident.vue';
 export default {
   components: {
     Login,
@@ -60,7 +62,8 @@ export default {
     Products,
     forPayment,
     bkAssignment,
-    listTraders
+    listTraders,
+    clientResident
   }
 }
 </script>

@@ -1,19 +1,13 @@
-# primevue
+# SBT
 
-## Project setup
-```
-npm install
-```
+## Сделанный проект, специально для "Республиканская универсальная агропромышленная биржа"
 
-### Compiles and hot-reloads for development
+
+### Запустить проект
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Связи
+TG: [Configuration Reference](https:t.me/odilbekovic7).

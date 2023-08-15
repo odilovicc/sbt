@@ -16,7 +16,8 @@
   <!-- <viewExchangesContent></viewExchangesContent> -->
   <!-- <Products></Products> -->
   <!-- <forPayment></forPayment> -->
-  <bkAssignment></bkAssignment>
+  <!-- <bkAssignment></bkAssignment> -->
+  <listTraders></listTraders>
 </template>
 
 <script>
@@ -37,7 +38,8 @@ import Protocols from './components/Moderator/Protocols.vue';
 import viewExchangesContent from './components/Moderator/viewExchangesContent.vue'
 import Products from './components/Moderator/Products.vue';
 import forPayment from './components/Moderator/forPayment.vue';
-import bkAssignment from './components/Broker/bkAssignment.vue'
+import bkAssignment from './components/Broker/bkAssignment.vue';
+import listTraders from './components/Broker/listTraders.vue';
 export default {
   components: {
     Login,
@@ -57,7 +59,8 @@ export default {
     viewExchangesContent,
     Products,
     forPayment,
-    bkAssignment
+    bkAssignment,
+    listTraders
   }
 }
 </script>
@@ -101,4 +104,7 @@ export default {
 
 body {
   /* background: #e3eff6; */
-}</style>
+}
+
+@import url('./assets/main.css');
+</style>

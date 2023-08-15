@@ -8,6 +8,3 @@
 npm run serve
 ```
 
-
-### Связи
-TG: [Configuration Reference](https:t.me/odilbekovic7).

@@ -19,7 +19,8 @@
   <!-- <bkAssignment></bkAssignment> -->
   <!-- <listTraders></listTraders> -->
   <!-- <requestList></requestList> -->
-  <buliten></buliten>
+  <!-- <buliten></buliten> -->
+  <bulitenView></bulitenView>
 </template>
 
 <script>
@@ -44,6 +45,7 @@ import bkAssignment from './components/Broker/bkAssignment.vue';
 import listTraders from './components/Broker/listTraders.vue';
 import requestList from './components/Broker/requestList.vue';
 import buliten from './components/Broker/buliten.vue';
+import bulitenView from './components/Broker/bulitenView.vue';
 export default {
   components: {
     Login,
@@ -66,7 +68,8 @@ export default {
     bkAssignment,
     listTraders,
     requestList,
-    buliten
+    buliten,
+    bulitenView,
   }
 }
 </script>

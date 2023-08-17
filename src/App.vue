@@ -23,7 +23,8 @@
   <!-- <bulitenView></bulitenView> -->
   <!-- <auctions></auctions> -->
   <!-- <auctionView></auctionView> -->
-  <dogovorSale></dogovorSale>
+  <!-- <dogovorSale></dogovorSale> -->
+  <dogovorSaleView></dogovorSaleView>
 </template>
 
 <script>
@@ -52,6 +53,7 @@ import bulitenView from './components/Broker/bulitenView.vue';
 import auctions from './components/Broker/auctions.vue';
 import auctionView from './components/Broker/auctionView.vue'
 import dogovorSale from './components/Trader/dogovorSale.vue'
+import dogovorSaleView from './components/Trader/dogovorSaleView.vue';
 export default {
   components: {
     Login,
@@ -78,7 +80,8 @@ export default {
     bulitenView,
     auctions,
     auctionView,
-    dogovorSale
+    dogovorSale,
+    dogovorSaleView
   }
 }
 </script>

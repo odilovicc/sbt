@@ -5,6 +5,7 @@
                 <h1 class="text-xl font-semibold">Ввод новой заявки</h1>
                 <Button label="Вернуться в список" icon="pi pi-arrow-left" class="ml-auto" outlined />
             </div>
+            <Message severity="warn">Заполните все поля!</Message>
             <div class="py-5">
                 <div class="py-5 flex items-center">
                     <label class="w-1/2">Клиент: <span class="text-red-500">*</span></label>

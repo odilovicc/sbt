@@ -20,7 +20,9 @@
   <!-- <listTraders></listTraders> -->
   <!-- <requestList></requestList> -->
   <!-- <buliten></buliten> -->
-  <bulitenView></bulitenView>
+  <!-- <bulitenView></bulitenView> -->
+  <!-- <auctions></auctions> -->
+  <auctionView></auctionView>
 </template>
 
 <script>
@@ -46,6 +48,8 @@ import listTraders from './components/Broker/listTraders.vue';
 import requestList from './components/Broker/requestList.vue';
 import buliten from './components/Broker/buliten.vue';
 import bulitenView from './components/Broker/bulitenView.vue';
+import auctions from './components/Broker/auctions.vue';
+import auctionView from './components/Broker/auctionView.vue'
 export default {
   components: {
     Login,
@@ -70,6 +74,8 @@ export default {
     requestList,
     buliten,
     bulitenView,
+    auctions,
+    auctionView
   }
 }
 </script>

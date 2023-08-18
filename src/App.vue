@@ -9,9 +9,10 @@
   <!-- <Logs></Logs> -->
   <!-- <Tarif></Tarif> -->
   <!-- <ExchangesTeam></ExchangesTeam> -->
-  <Clients></Clients>
+  <!-- <Clients></Clients> -->
   <!-- <Requests></Requests> -->
   <!-- <WaitingRequests></WaitingRequests> -->
+  <WaitingRequestsView></WaitingRequestsView>
   <!-- <Protocols></Protocols> -->
   <!-- <viewExchangesContent></viewExchangesContent> -->
   <!-- <Products></Products> -->
@@ -42,6 +43,7 @@ import ExchangesTeam from './components/Moderator/ExchangesTeam.vue'
 import Clients from './components/Moderator/Clients.vue';
 import Requests from './components/Moderator/Requests.vue';
 import WaitingRequests from './components/Moderator/WaitingRequests.vue';
+import WaitingRequestsView from './components/Moderator/waitingRequestsView.vue';
 import Protocols from './components/Moderator/Protocols.vue';
 import viewExchangesContent from './components/Moderator/viewExchangesContent.vue'
 import Products from './components/Moderator/Products.vue';
@@ -71,6 +73,7 @@ export default {
     Clients,
     Requests,
     WaitingRequests,
+    WaitingRequestsView,
     Protocols,
     viewExchangesContent,
     Products,

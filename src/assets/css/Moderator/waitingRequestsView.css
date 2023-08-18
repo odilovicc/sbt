@@ -1,0 +1,21 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+@layer components {
+    .requestFromJS{
+        @apply font-semibold py-1 px-3 text-red-500 bg-red-500 bg-opacity-20 rounded-md
+    }
+    .headersOfNewSections {
+        @apply font-semibold text-xl text-[--primary-color] my-4
+    }
+    .defaultFlex {
+        @apply flex items-center
+    }
+    .forms {
+        @apply py-5 flex items-center
+    }
+    .formLabel {
+        @apply text-xl
+    }
+}

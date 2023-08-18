@@ -1,5 +1,5 @@
-export const ProductService = {
-    getProductsData() {
+export const requestList = {
+    requestListData() {
         return [
             {
                 id: '1',
@@ -36,8 +36,8 @@ export const ProductService = {
 
 
 
-    getProductsMini() {
-        return Promise.resolve(this.getProductsData().slice(0, 5));
+    getRequestsMini() {
+        return Promise.resolve(this.requestListData().slice(0, 5));
     }, 
 };
     

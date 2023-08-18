@@ -1,8 +1,8 @@
 
 <template>
-    <div class="container mx-auto py-10">
+    <div class="w-[90vw] mx-auto py-10">
         <h1 class="text-2xl font-bold mb-10">ЖУРНАЛ ДЕЙСТВИЙ ПОЛЬЗОВАТЕЛЕЙ</h1>
-        <DataTable :value="actions" showGridlines>
+        <DataTable :value="actions">
             <Column field="number" header="№"></Column>
             <Column field="date" header="Дата и время"></Column>
             <Column field="user" header="Пользователь"></Column>

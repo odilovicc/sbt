@@ -5,8 +5,8 @@
   <!-- <RegClient></RegClient> -->
   <!-- <Users></Users> -->
   <!-- <Roles></Roles> -->
-  <Access></Access>
-  <!-- <Logs></Logs> -->
+  <!-- <Access></Access> -->
+  <Logs></Logs>
   <!-- <Tarif></Tarif> -->
   <!-- <ExchangesTeam></ExchangesTeam> -->
   <!-- <Clients></Clients> -->

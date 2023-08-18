@@ -24,7 +24,8 @@
   <!-- <auctions></auctions> -->
   <!-- <auctionView></auctionView> -->
   <!-- <dogovorSale></dogovorSale> -->
-  <dogovorSaleView></dogovorSaleView>
+  <!-- <dogovorSaleView></dogovorSaleView> -->
+  <listBrokers></listBrokers>
 </template>
 
 <script>
@@ -54,6 +55,7 @@ import auctions from './components/Broker/auctions.vue';
 import auctionView from './components/Broker/auctionView.vue'
 import dogovorSale from './components/Trader/dogovorSale.vue'
 import dogovorSaleView from './components/Trader/dogovorSaleView.vue';
+import listBrokers from './components/Client/listBrokers.vue'
 export default {
   components: {
     Login,
@@ -81,7 +83,8 @@ export default {
     auctions,
     auctionView,
     dogovorSale,
-    dogovorSaleView
+    dogovorSaleView,
+    listBrokers
   }
 }
 </script>

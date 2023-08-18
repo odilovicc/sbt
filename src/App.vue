@@ -8,8 +8,8 @@
   <!-- <Access></Access> -->
   <!-- <Logs></Logs> -->
   <!-- <Tarif></Tarif> -->
-  <ExchangesTeam></ExchangesTeam>
-  <!-- <Clients></Clients> -->
+  <!-- <ExchangesTeam></ExchangesTeam> -->
+  <Clients></Clients>
   <!-- <Requests></Requests> -->
   <!-- <WaitingRequests></WaitingRequests> -->
   <!-- <Protocols></Protocols> -->

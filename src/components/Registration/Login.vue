@@ -19,15 +19,9 @@
         <a class="font-medium no-underline mx-auto text-blue-500 text-right cursor-pointer">Регистрация клиент</a>
       </div>
 
-      <Button label="Sign In" icon="pi pi-user" class="w-full" severity="info"></Button>
+      <Button label="Вход" icon="pi pi-user" class="w-full" severity="info"></Button>
     </div>
   </div>
 </template>
 <script setup>
 </script>
- <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.bg {
-  background: url("../../assets/bg-2.jpg");
-}
-</style>

@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <!-- <Login/> -->
-  <!-- <RegPeopleBirja></RegPeopleBirja> -->
+  <RegPeopleBirja></RegPeopleBirja>
   <!-- <RegClient></RegClient> -->
   <!-- <Users></Users> -->
   <!-- <Roles></Roles> -->
@@ -25,7 +25,7 @@
   <!-- <auctionView></auctionView> -->
   <!-- <dogovorSale></dogovorSale> -->
   <!-- <dogovorSaleView></dogovorSaleView> -->
-  <listBrokers></listBrokers>
+  <!-- <listBrokers></listBrokers> -->
 </template>
 
 <script>
@@ -90,45 +90,6 @@ export default {
 </script>
 
 <style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
-
-
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-.appear {
-  animation-duration: 0.75s;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-name: animate-pop;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
-  animation-fill-mode: backwards;
-}
-
-.animate.pop {
-  animation-name: animate-pop;
-}
-
-@keyframes animate-pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
-
-body {
-  /* background: #e3eff6; */
-}
 
 @import url('./assets/main.css');
 </style>

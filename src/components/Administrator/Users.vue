@@ -1,11 +1,12 @@
 
 <template>
-    <div class="container mx-auto py-10">
+    <div class="w-[90vw] mx-auto py-10">
         <div class="flex items-center mb-14 gap-12 lg:gap-0">
             <h1 class="font-bold text-lg lg:text-2xl">СПИСОК ПОЛЬЗОВАТЕЛЕЙ ЭСТБ</h1>
-            <Button label="Добавить нового пользователя" class="ml-auto " outlined @click="visible = true" />
+            <Button label="Добавить нового пользователя" icon="pi pi-plus" class="ml-auto " outlined @click="visible = true" />
+            <!-- Добавить нового пользователя Dialog -->
             <Dialog v-model:visible="visible" modal header="НОВЫЙ ТРЕЙДЕР" :style="{ width: '50vw' }">
-                <form action="" class="w-full px-10 py-6">
+                <form action="" class="w-full py-6">
                     <div class="py-5 flex items-center">
                         <label class="text-900 font-medium mb-2 w-1/2">Прикрепить открытый ключ
                             ЭЦП</label>
@@ -23,34 +24,37 @@
                     </div>
                     <div class="py-5 flex items-center">
                         <h1 class="text-900 font-medium w-1/2">Ф.И.О пользователя</h1>
-                        <InputText />
+                        <InputText class="w-full" />
                     </div>
                     <div class="py-5 flex items-center">
                         <h1 class="text-900 font-medium w-1/2">Паспорт №</h1>
-                        <InputNumber />
+                        <InputNumber class="w-full" />
                     </div>
                     <h1 class="font-xl text-emerald-600 font-semibold my-5">Контактная информация</h1>
                     <div class="py-5 flex items-center">
                         <h1 class="text-900 font-medium w-1/2">Телефон</h1>
-                        <InputMask v-model="value" mask="999-99-999-99-99" placeholder="+998-00-000-00-00" />
+                        <InputMask class="w-full" v-model="value" mask="999-99-999-99-99" placeholder="+998-00-000-00-00" />
                     </div>
                     <div class="py-5 flex items-center">
                         <h1 class="text-900 font-medium w-1/2">Мобильный</h1>
-                        <InputMask v-model="value" mask="999-99-999-99-99" placeholder="+998-00-000-00-00" />
+                        <InputMask class="w-full" v-model="value" mask="999-99-999-99-99" placeholder="+998-00-000-00-00" />
                     </div>
                     <div class="py-5 flex items-center">
                         <h1 class="text-900 font-medium w-1/2">E-mail</h1>
-                        <InputText />
-                    </div>
-                    <hr>
-                    <div class="flex gap-12 mt-8">
-                        <Button label="Отмена" @click="visible = false" severity="secondary" />
-                        <Button label="Сохранить" @click="visible = false" class="text-[#8B5CF6] px-4" />
+                        <InputText class="w-full" />
                     </div>
                 </form>
+                <template #footer>
+                    <div class="flex gap-5">
+                        <Button label="Отмена" @click="visible = false" severity="info" />
+                        <Button label="Сохранить" @click="visible = false" severity="success" />
+                        <Toast />
+                    </div>
+                </template>
             </Dialog>
+            <!-- Добавить нового пользователя Dialog -->
         </div>
-        <DataTable showGridlines  v-model:editingRows="editingRows" :value="products" editMode="row" dataKey="id"
+        <DataTable v-model:editingRows="editingRows" :value="products" editMode="row" dataKey="id"
             @row-edit-save="onRowEditSave" tableClass="editable-cells-table">
             <Column field="number" header="№" style="width: 20%">
                 <template #editor="{ data, field }">
@@ -89,10 +93,11 @@
             <Column :rowEditor="true" style="width: 10%; min-width: 8rem" bodyStyle="text-align:center"></Column>
         </DataTable>
     </div>
+
 </template>
 
 <script>
-import { ProductService } from '@/assets/js/UsersTable';
+import { UsersTable } from '@/assets/js/UsersTable';
 
 export default {
     data() {
@@ -106,7 +111,7 @@ export default {
         };
     },
     mounted() {
-        ProductService.getProductsMini().then((data) => (this.products = data));
+        UsersTable.getUsersDataMini().then((data) => (this.products = data));
     },
     methods: {
         onRowEditSave(event) {

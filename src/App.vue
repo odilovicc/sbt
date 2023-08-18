@@ -2,8 +2,8 @@
   <Navbar />
   <!-- <Login/> -->
   <!-- <RegPeopleBirja></RegPeopleBirja> -->
-  <RegClient></RegClient>
-  <!-- <Users></Users> -->
+  <!-- <RegClient></RegClient> -->
+  <Users></Users>
   <!-- <Roles></Roles> -->
   <!-- <Access></Access> -->
   <!-- <Logs></Logs> -->

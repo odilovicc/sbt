@@ -1,5 +1,5 @@
-export const ProductService = {
-  getProductsData() {
+export const UsersTable = {
+  getUsersData() {
     return [
       {
         id: "1",
@@ -84,15 +84,7 @@ export const ProductService = {
     ];
   },
 
-  getProductsMini() {
-    return Promise.resolve(this.getProductsData().slice(0, 10));
-  },
-
-  getProductsSmall() {
-    return Promise.resolve(this.getProductsData().slice(0, 10));
-  },
-
-  getProducts() {
-    return Promise.resolve(this.getProductsData());
+  getUsersDataMini() {
+    return Promise.resolve(this.getUsersData().slice(0, 10));
   },
 };

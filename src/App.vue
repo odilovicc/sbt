@@ -3,8 +3,8 @@
   <!-- <Login/> -->
   <!-- <RegPeopleBirja></RegPeopleBirja> -->
   <!-- <RegClient></RegClient> -->
-  <Users></Users>
-  <!-- <Roles></Roles> -->
+  <!-- <Users></Users> -->
+  <Roles></Roles>
   <!-- <Access></Access> -->
   <!-- <Logs></Logs> -->
   <!-- <Tarif></Tarif> -->

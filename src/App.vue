@@ -7,8 +7,8 @@
   <!-- <Roles></Roles> -->
   <!-- <Access></Access> -->
   <!-- <Logs></Logs> -->
-  <Tarif></Tarif>
-  <!-- <ExchangesTeam></ExchangesTeam> -->
+  <!-- <Tarif></Tarif> -->
+  <ExchangesTeam></ExchangesTeam>
   <!-- <Clients></Clients> -->
   <!-- <Requests></Requests> -->
   <!-- <WaitingRequests></WaitingRequests> -->

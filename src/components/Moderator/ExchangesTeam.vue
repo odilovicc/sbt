@@ -1,7 +1,7 @@
 <template>
 
-    <div class="mx-auto py-20 px-24">
-        <DataTable :value="teamexchange" showGridlines class="mx-auto">
+    <div class="w-[90vw] mx-auto py-10">
+        <DataTable :value="teamexchange" class="mx-auto">
             <h1 class="font-2xl font-semibold mb-10">СПИСОК ЧЛЕНОВ БИРЖИ</h1>
             <Column field="number" header="№"></Column>
             <Column field="nomer" header="Номер"></Column>

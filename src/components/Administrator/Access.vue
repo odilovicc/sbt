@@ -2,7 +2,7 @@
     <div class="container mx-auto py-10">
         <div class="flex items-center mb-14">
             <h1 class="text-2xl font-bold">СПИСОК РОЛЕЙ ПОЛЬЗОВАТЕЛЕЙ</h1>
-            <Button label="Новый права доступа" class="ml-auto text-[#8B5CF6]" icon="pi pi-check" @click="visible = true" />
+            <Button label="Новый права доступа" class="ml-auto" outlined icon="pi pi-check" @click="visible = true" />
             <Dialog v-model:visible="visible" modal header="НОВЫЙ Права доступа" class="" :style="{ width: '50vw' }">
                 <div class="px-5 py-3">
                     <label for="role">Роль <span class="text-red-500">*</span></label>
@@ -28,21 +28,16 @@
                     <label for="role">URL в скрипте <span class="text-red-500">*</span></label>
                     <InputText class="w-full my-2" />
                 </div>
-                <hr class="my-5">
-                <div class="px-5 w-full">
-                    <Button label="Отменить" severity="secondary" />
-                    <Button label="Сохранить" class="text-[#8B5CF6] lg:mx-3 mx-0 my-4 lg:my-0" @click="showSuccess"/>
+                <template #footer>
+                    <Button label="Отменить" severity="info" />
+                    <Button label="Сохранить" class="lg:mx-3 mx-0 my-4 lg:my-0" severity="success"  @click="showSuccess" />
                     <Toast />
-                </div>
+                </template>
 
             </Dialog>
         </div>
-        <!-- <DataTable :value="products" showGridlines tableStyle="min-width: 50rem">
+        <DataTable v-model:selection="roles" :value="role" dataKey="id">
             <Column field="number" header="№"></Column>
-            <Column field="role" header="Роль"></Column>
-        </DataTable> -->
-        <DataTable v-model:selection="roles" showGridlines  :value="role" dataKey="id">
-            <Column field="number" class="w-14" header="№"></Column>
             <Column field="role" header="Роль"></Column>
         </DataTable>
     </div>
@@ -69,5 +64,4 @@ const showSuccess = () => {
 };
 
 </script>
-<style scoped>
-</style>
+<style scoped></style>

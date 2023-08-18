@@ -1,7 +1,7 @@
 <template>
     <h1 class="text-2xl font-bold">Регистрация новый трейдер</h1>
-    <h1 class="text-lg mt-2 font-semibold text-black opacity-30 inline-">Уже есть учетная запись?</h1>
-    <a href="#" class="ml-2 text-sky-600 text-lg mt-2 font-semibold opacity-100">Войти в систему</a>
+    <h1 class="text-lg mt-2 font-semibold text-black opacity-30 inline-block">Уже есть учетная запись?</h1>
+    <a href="#" class="ml-2 text-sky-600 text-lg font-semibold opacity-100">Войти в систему</a>
     <div class="shadow-lg p-4 lg:p-16 my-12">
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, iusto. Tempora accusamus

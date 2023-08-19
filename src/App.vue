@@ -28,7 +28,8 @@
   <!-- <dogovorSaleView></dogovorSaleView> -->
   <!-- <listBrokers></listBrokers> -->
   <!-- <accounts></accounts> -->
-  <listPayments></listPayments>
+  <!-- <listPayments></listPayments> -->
+  <registerTrades></registerTrades>
 </template>
 
 <script>
@@ -62,6 +63,7 @@ import dogovorSaleView from './components/Trader/dogovorSaleView.vue';
 import listBrokers from './components/Client/listBrokers.vue'
 import accounts from './components/Client/Счета на оплату/accounts.vue'
 import listPayments from './components/Client/Список оплат/listPayments.vue'
+import registerTrades from './components/Client/Реестр сделок/registerTrades.vue'
 export default {
   components: {
     Login,
@@ -93,7 +95,8 @@ export default {
     dogovorSaleView,
     listBrokers,
     accounts,
-    listPayments
+    listPayments,
+    registerTrades
   }
 }
 </script>

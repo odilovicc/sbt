@@ -13,7 +13,7 @@
   <!-- <Requests></Requests> -->
   <!-- <WaitingRequests></WaitingRequests> -->
   <!-- <WaitingRequestsView></WaitingRequestsView> -->
-  <Protocols></Protocols>
+  <!-- <Protocols></Protocols> -->
   <!-- <viewExchangesContent></viewExchangesContent> -->
   <!-- <Products></Products> -->
   <!-- <forPayment></forPayment> -->
@@ -27,6 +27,7 @@
   <!-- <dogovorSale></dogovorSale> -->
   <!-- <dogovorSaleView></dogovorSaleView> -->
   <!-- <listBrokers></listBrokers> -->
+  <accounts></accounts>
 </template>
 
 <script>
@@ -58,6 +59,7 @@ import auctionView from './components/Broker/auctionView.vue'
 import dogovorSale from './components/Trader/dogovorSale.vue'
 import dogovorSaleView from './components/Trader/dogovorSaleView.vue';
 import listBrokers from './components/Client/listBrokers.vue'
+import accounts from './components/Client/Счета на оплату/accounts.vue'
 export default {
   components: {
     Login,
@@ -87,12 +89,12 @@ export default {
     auctionView,
     dogovorSale,
     dogovorSaleView,
-    listBrokers
+    listBrokers,
+    accounts
   }
 }
 </script>
 
 <style>
-
 @import url('./assets/main.css');
 </style>

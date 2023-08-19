@@ -27,7 +27,7 @@
   <!-- <dogovorSale></dogovorSale> -->
   <!-- <dogovorSaleView></dogovorSaleView> -->
   <!-- <listBrokers></listBrokers> -->
-  <accounts></accounts>
+  <!-- <accounts></accounts> -->
 </template>
 
 <script>
@@ -60,6 +60,7 @@ import dogovorSale from './components/Trader/dogovorSale.vue'
 import dogovorSaleView from './components/Trader/dogovorSaleView.vue';
 import listBrokers from './components/Client/listBrokers.vue'
 import accounts from './components/Client/Счета на оплату/accounts.vue'
+import listPayments from './components/Client/Список оплат/listPayments.vue'
 export default {
   components: {
     Login,

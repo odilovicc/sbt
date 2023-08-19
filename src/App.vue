@@ -12,8 +12,8 @@
   <!-- <Clients></Clients> -->
   <!-- <Requests></Requests> -->
   <!-- <WaitingRequests></WaitingRequests> -->
-  <WaitingRequestsView></WaitingRequestsView>
-  <!-- <Protocols></Protocols> -->
+  <!-- <WaitingRequestsView></WaitingRequestsView> -->
+  <Protocols></Protocols>
   <!-- <viewExchangesContent></viewExchangesContent> -->
   <!-- <Products></Products> -->
   <!-- <forPayment></forPayment> -->

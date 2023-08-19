@@ -1,14 +1,6 @@
-<!-- <hr class="mt-2" />
-<div class="p-14 flex w-full items-center">
-    <div class="flex items-center">
-        <div><h1 class="py-2 pr-5 pl-2 bg-cyan-700 bg-opacity-30">Контракт</h1></div>
-        <div><h1 class="">№ 359/3 от 12.03.2020 г.</h1></div>
-    </div>
-</div>
-</div> -->
 <template>
     <div class="w-[90vw] mx-auto my-10">
-        <div class="flex gap-12 ">
+        <div class="flex gap-12">
             <div class="bg-[#1E1E1E] py-5 rounded-md shadow-xl">
                 <header class="px-10 py-3 flex items-center">
                     <h1 class="font-medium text-xl">Просмотр биржевого контракта</h1>
@@ -163,6 +155,7 @@
 </template>
 <script>
 import { NodeService } from '@/assets/js/exchangesContentTree';
+import { useToast } from "primevue/usetoast";
 
 export default {
     data() {
@@ -222,7 +215,6 @@ const paymentForOptions = ref([
 const ingredient = ref('');
 
 // Toast
-import { useToast } from "primevue/usetoast";
 const toast = useToast();
 
 const show = () => {

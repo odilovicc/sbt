@@ -28,6 +28,7 @@
   <!-- <dogovorSaleView></dogovorSaleView> -->
   <!-- <listBrokers></listBrokers> -->
   <!-- <accounts></accounts> -->
+  <listPayments></listPayments>
 </template>
 
 <script>
@@ -91,7 +92,8 @@ export default {
     dogovorSale,
     dogovorSaleView,
     listBrokers,
-    accounts
+    accounts,
+    listPayments
   }
 }
 </script>

@@ -18,4 +18,14 @@ export const data = {
   orderDeadline: "10",
   sizeLLot: "123",
   sizeLot: "23",
+  imgSource: 'http://213.230.99.183:444/sebt/img/jpg.svg',
+  imgName: 'foto 1',
+  pdfDocument: 'http://213.230.99.183:444/sebt/img/pdf.svg',
+  pdfDocumentName: 'Складская справка',
+  wordDocument: 'http://213.230.99.183:444/sebt/img/doc.svg',
+  wordDocumentName: 'Гарантийное письмо',
+  imgDocument: 'http://213.230.99.183:444/sebt/img/jpg.svg',
+  imgDocumentName: 'Документ качества (сертификат, паспорт, ТУ)',
+  scannedDocument: 'http://213.230.99.183:444/sebt/img/jpg.svg',
+  scannedDocumentName: 'Договор поручениe'
 };

@@ -146,7 +146,7 @@
             <!-- Базиз поставки Start -->
             <div class="p-10">
                 <h1 class="headersOfNewSections">Базиз поставки</h1>
-                
+
                 <!-- 1/2 sections -->
                 <div class="defaultFlex gap-12">
                     <div class="forms w-full">
@@ -161,13 +161,13 @@
                 <div class="defaultFlex gap-12">
                     <div class="forms w-full">
                         <h1 class="w-1/2">Страна происхождения</h1>
-                        <Dropdown v-model="selectedCountryHappens" :options="happenCountries" optionLabel="name" placeholder="Не выбрано"
-                        class="w-full md:w-14rem" />
+                        <Dropdown v-model="selectedCountryHappens" :options="happenCountries" optionLabel="name"
+                            placeholder="Не выбрано" class="w-full md:w-14rem" />
                     </div>
                     <div class="forms w-full">
                         <h1 class="w-1/2">Базиз поставки</h1>
-                        <Dropdown v-model="selectedBasisOrdering" :options="orderingBasis" optionLabel="name" placeholder="Не выбрано"
-                        class="w-full md:w-14rem" />
+                        <Dropdown v-model="selectedBasisOrdering" :options="orderingBasis" optionLabel="name"
+                            placeholder="Не выбрано" class="w-full md:w-14rem" />
                     </div>
                 </div>
                 <div class="defaultFlex gap-12">
@@ -175,9 +175,9 @@
                         <h1 class="w-1/2">Срок поставки</h1>
                         <div class="w-full">
                             <div class="p-inputgroup flex-1">
-                            <InputText :value="data.orderDeadline" />
-                            <span class="p-inputgroup-addon">банк. дней</span>
-                        </div>
+                                <InputText :value="data.orderDeadline" />
+                                <span class="p-inputgroup-addon">банк. дней</span>
+                            </div>
                         </div>
                     </div>
                     <div class="forms w-full">
@@ -205,12 +205,120 @@
                 <!-- 1/2 sections -->
             </div>
             <!-- Базиз поставки End -->
+            <!-- Доп информация Start -->
+            <div class="">
+                <h1 class="headersOfNewSections">Дополнительная информация</h1>
+                <div class="forms w-full">
+                    <h1 class="w-1/2">Особые условия (Примечание) (рус)</h1>
+                    <Textarea class="w-full" />
+                </div>
+                <div class="forms w-full">
+                    <h1 class="w-1/2">Особые условия (Примечание) (узб)</h1>
+                    <Textarea class="w-full" />
+                </div>
+                <div class="defaultFlex gap-12">
+                    <div class="forms w-full">
+                        <h1 class="w-1/2">% залога с продавца</h1>
+                        <Dropdown v-model="selectedPercentFromSeller" :options="percentsSeller" optionLabel="name"
+                            placeholder="Не выбрано" class="w-full md:w-14rem" />
+                    </div>
+                    <div class="forms w-full">
+                        <h1 class="w-1/2">% залога с продавца</h1>
+                        <Dropdown v-model="selectedPercentFromBuyer" :options="percentsBuyer" optionLabel="name"
+                            placeholder="Не выбрано" class="w-full md:w-14rem" />
+                    </div>
+                </div>
+            </div>
+            <!-- Доп информация End -->
+            <!-- Фото товара Start -->
+            <div>
+                <h1 class="headersOfNewSections">Фото товара</h1>
+                <div class="defaultFlex justify-center py-5 gap-12">
+                    <div class="imgDiv">
+                        <img :src="data.imgSource" class="w-1/3 mx-auto" alt="">
+                        <h1 class="imgName">{{ data.imgName }}</h1>
+                    </div>
+                    <div class="imgDiv">
+                        <img :src="data.imgSource" class="w-1/3 mx-auto" alt="">
+                        <h1 class="imgName">{{ data.imgName }}</h1>
+                    </div>
+                    <div class="imgDiv">
+                        <img :src="data.imgSource" class="w-1/3 mx-auto" alt="">
+                        <h1 class="imgName">{{ data.imgName }}</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Фото товара End -->
+            <!-- Документы к заявке Start -->
+            <div>
+                <h1 class="headersOfNewSections">Сопроводительные документы к заявке</h1>
+                <div class="defaultFlex justify-center py-5 gap-12">
+                    <div class="imgDiv w-1/4">
+                        <img :src="data.pdfDocument" alt="">
+                        <h1 class="imgName">{{ data.pdfDocumentName }}</h1>
+                    </div>
+                    <div class="imgDiv w-1/4">
+                        <img :src="data.wordDocument" alt="">
+                        <h1 class="imgName">{{ data.wordDocumentName }}</h1>
+                    </div>
+                    <div class="imgDiv w-1/4">
+                        <img :src="data.imgDocument" alt="">
+                        <h1 class="imgName">{{ data.imgDocumentName }}</h1>
+                    </div>
+                    <div class="imgDiv w-1/4">
+                        <img :src="data.scannedDocument" alt="">
+                        <h1 class="imgName">{{ data.scannedDocumentName }}</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Документы к заявке End -->
+            <!-- Поля зап. маклером Start -->
+            <div>
+                <h1 class="headersOfNewSections">Поля, заполняемые главным маклером</h1>
+                <div class="defaultFlex gap-5">
+                    <div class="forms w-full">
+                        <h1 class="w-1/2">Понижение цены не менее,%</h1>
+                        <InputText class="w-full" />
+                    </div>
+                    <div class="forms w-full">
+                        <h1 class="w-1/2">Повышение цены не более,%</h1>
+                        <InputText class="w-full" />
+                    </div>
+                </div>
+                <div class="forms">
+                    <h1 class="w-1/3">Статус</h1>
+                    <div class="flex items-center">
+                        <RadioButton v-model="status" inputId="agree" value="agree" />
+                        <label for="agree" class="ml-2">Утвердить</label>
+                    </div>
+                    <div class="flex items-center mx-3">
+                        <RadioButton v-model="status" inputId="disagree" value="disagree" />
+                        <label for="disagree" class="ml-2">Отклонить</label>
+                    </div>
+                </div>
+                <div class="forms w-full">
+                    <h1 class="w-1/2">Пояснение к решению</h1>
+                    <Textarea class="w-full" />
+                </div>
+                <div class="forms w-full">
+                    <h1 class="w-1/2">Код подтверждения действия <span class="text-red-500">*</span></h1>
+                    <InputText type="password" class="w-full" />
+                </div>
+            </div>
+            <!-- Поля зап. маклером End -->
+            <!-- Buttons Start -->
+            <div class="flex items-center gap-8 py-10 justify-end">
+                <Button label="Отмена" severity="info" />
+                <Button label="Сохранить" severity="success" />
+            </div>
+            <!-- Buttons End -->
             <!-- Form end -->
         </div>
     </div>
 </template>
 <script>
 import { data } from '@/assets/js/Moderator/waitingRequestsView';
+import InputText from "primevue/inputtext";
 
 export default {
     data() {
@@ -223,6 +331,9 @@ export default {
 
 <script setup>
 import { ref } from "vue";
+
+// Не забудь импортировать { ref }
+const status = ref('');
 
 const selectedNameItem = ref();
 const nameItems = ref([
@@ -289,6 +400,14 @@ const happenCountries = ref([
 const selectedBasisOrdering = ref();
 const orderingBasis = ref([
     { name: 'EXW - самовывоз', },
+]);
+const selectedPercentFromSeller = ref();
+const percentsSeller = ref([
+    { name: '0', },
+]);
+const selectedPercentFromBuyer = ref();
+const percentsBuyer = ref([
+    { name: '3', },
 ]);
 </script>
 

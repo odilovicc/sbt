@@ -18,4 +18,10 @@
     .formLabel {
         @apply text-xl
     }
+    .imgName {
+        @apply text-xl requestFromJS text-center mx-auto mt-10 whitespace-nowrap overflow-hidden text-ellipsis
+    }
+    .imgDiv {
+        @apply rounded-md p-5 bg-[#1b1b1b] overflow-hidden
+    }
 }

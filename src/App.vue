@@ -30,7 +30,8 @@
 
   <!-- <accounts></accounts> -->
   <!-- <listPayments></listPayments> -->
-
+    <!-- <registerTrades></registerTrades> -->
+  <requestForSell></requestForSell>
 </template>
 
 <script>
@@ -66,11 +67,11 @@ import listBrokers from './components/Client/listBrokers.vue'
 import accounts from './components/Client/Счета на оплату/accounts.vue'
 import listPayments from './components/Client/Список оплат/listPayments.vue'
 import registerTrades from './components/Client/Реестр сделок/registerTrades.vue'
-
+import requestForSell from './components/Client/Поручение на продажу/requestForSell.vue';
 
 export default {
   components: {
-    Newreg,
+    requestForSell,
     Login,
     Navbar,
     RegPeopleBirja,

@@ -30,7 +30,6 @@
 
   <!-- <accounts></accounts> -->
   <!-- <listPayments></listPayments> -->
-  <Newreg></Newreg>
 
 </template>
 
@@ -68,7 +67,6 @@ import accounts from './components/Client/Счета на оплату/accounts.
 import listPayments from './components/Client/Список оплат/listPayments.vue'
 import registerTrades from './components/Client/Реестр сделок/registerTrades.vue'
 
-import Newreg from './components/Client/Newreg.vue';
 
 export default {
   components: {

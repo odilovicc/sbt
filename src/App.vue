@@ -30,8 +30,6 @@
 
   <!-- <accounts></accounts> -->
   <!-- <listPayments></listPayments> -->
-  <!-- <registerTrades></registerTrades> -->
-
   <Newreg></Newreg>
 
 </template>

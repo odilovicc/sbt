@@ -12,7 +12,7 @@
             </Column>
             <Column class="w-14">
                 <template #body>
-                    <Button icon="pi pi-file" severity="info" @click="visible = true" />
+                    <Button icon="pi pi-trash" severity="info" @click="visible = true" />
                     <Dialog v-model:visible="visible" modal :style="{ width: '50vw' }">
                         <div class="flex items-center justify-center px-5 gap-12">
                             <div class="w-1/2 bg-[rgb(23,23,23)] rounded-md py-10">

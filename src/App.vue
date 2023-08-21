@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <Login/>
+  <!-- <Login/> -->
   <!-- <RegPeopleBirja></RegPeopleBirja> -->
   <!-- <RegClient></RegClient> -->
   <!-- <Users></Users> -->
@@ -27,8 +27,13 @@
   <!-- <dogovorSale></dogovorSale> -->
   <!-- <dogovorSaleView></dogovorSaleView> -->
   <!-- <listBrokers></listBrokers> -->
+
   <!-- <accounts></accounts> -->
   <!-- <listPayments></listPayments> -->
+  <!-- <registerTrades></registerTrades> -->
+
+  <Newreg></Newreg>
+
 </template>
 
 <script>
@@ -60,10 +65,16 @@ import auctionView from './components/Broker/auctionView.vue'
 import dogovorSale from './components/Trader/dogovorSale.vue'
 import dogovorSaleView from './components/Trader/dogovorSaleView.vue';
 import listBrokers from './components/Client/listBrokers.vue'
+
 import accounts from './components/Client/Счета на оплату/accounts.vue'
 import listPayments from './components/Client/Список оплат/listPayments.vue'
+import registerTrades from './components/Client/Реестр сделок/registerTrades.vue'
+
+import Newreg from './components/Client/Newreg.vue';
+
 export default {
   components: {
+    Newreg,
     Login,
     Navbar,
     RegPeopleBirja,
@@ -94,6 +105,7 @@ export default {
     listBrokers,
     accounts,
     listPayments,
+    registerTrades
   }
 }
 </script>
